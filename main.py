@@ -36,8 +36,8 @@ while True:
         try:
             number_songs = int(input('Digite a quantidade de músicas que deseja pesquisar o default são 15: '))
         except ValueError:
-            print('\nVocê deve informar um número inteiro para o número de músicas')
-            sys.exit()
+            number_songs = 15
+            print('\nComo não foi informado um número inteiro será retornado 15 músicas do artista/banda')
 
         request = Request(url, artist)
         content = request.content_page() # retorna o texto html da página do artista/banda escolhido
