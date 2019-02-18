@@ -7,6 +7,7 @@ Python3.6
 ## Instalação
 
 git clone https://github.com/anderson-matheus/python-music-crawler.git<br />
+cd python-music-crawler
 virtualenv venv<br />
 source venv/bin/activate<br />
 pip3 install -r requiremets.txt<br />
